@@ -1,0 +1,198 @@
+ :root{
+    --white: #e6e5e5;
+    --text: #000; 
+    --pale: #538cc6;
+    --green: darkgreen;
+    --icon: #000;
+ }
+ *{
+    margin: 0;
+ }
+   body{
+    background-color: var(--pale);
+   }
+
+ #header-img{
+    width: 100px;
+    object-fit: contain;
+ }
+ #nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+ }
+ .nav-link{
+   display: flex;
+   list-style: none;
+ }
+ .nav-link a{
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+ }
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.the-products{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#email-section{
+    margin-top: 150px;;
+}
+section::before{
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+     ;
+}
+#submit{
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+section{
+    margin: 40px 20px;
+    text-align: center;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.icon{
+   color: var(--icon);
+   margin-right: 30px;
+}
+ #features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+ }
+
+ .feature{
+    align-items: left;
+    justify-content: left;
+    margin: 20px;
+ }
+ .feature h1, p{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ } 
+  .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  }
+ .product-image{
+    width: 100px;
+    height: 500px;
+    margin: auto;
+ }
+ .product1{
+    background-image: url(https://i.pinimg.com/736x/2e/32/e8/2e32e8147c1111fa717d1ebdff7aad17.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    margin-top: 10px;
+ }
+ .product2{
+    background-image: url(https://img.kwcdn.com/thumbnail/s/77ef080101c28995c4e9ef28bd9e280c_9a2be4667f54.jpg?imageView2/2/w/800/q/70/format/webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+ }
+    .product3{
+        background-image: url(https://img-1.kwcdn.com/thumbnail/s/3789e2fd2234e32dd4a6b85e50dabfcf_9c6b006906a1.jpg?imageView2/2/w/800/q/70/format/webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 500px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+ #for_sale{
+    background-color: var(--icon);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+ }
+ button{
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+ }
+    .buy-now{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    }
+  @media only screen and (max-width: 600px){
+    #features{
+        flex-direction: column;
+    }
+    .feature{
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .product-image{
+        width: 100%;
+        height: auto;
+
+    }
+  }
+  @media only screen and( max-width: 400px){
+    #nav-bar{
+        flex-direction: column;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    .nav-links a{
+        padding: 10px 0;
+    }
+  }
+  @media only screen(max-width: 450px){
+    .product1, .product2, .product3{
+        width: 70%;
+        height: auto;
+        display: flex;
+    }
+  }
